@@ -113,7 +113,16 @@ button {
     display: flex;
     flex: 1;
     padding: 7px 15px;
+    align-items: center;
 }
+
+.link:hover {
+    border: 0;
+    background-color: whitesmoke;
+    color: blue;
+    border-radius: 40px;
+}
+
 .link-2 {
     display: flex;
     flex: 1;
