@@ -1,34 +1,44 @@
 body {
     padding: 0px;
     margin: 0px;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .container {
     display: flex;
 }
+ul {
+    padding-left: 25px;
+    margin: 0;
+}
 
 .right-side {
-    /*position: fixed;*/
+    position: fixed;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     flex: 1;
     order: 1;
+    width: 24vw;
+    height: 100vh;
+    border-right: 2px solid blue;
 }
 
 .middle {
-    flex: 3;
+    flex: 2;
     order: 2;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-right: 2px solid grey;
 }
 
 .left-side {
     flex: 1;
     order: 3;
+    margin-left: 25px;
 }
 
+
 .right-image {
-    width: 40px;
+    width: 30px;
     height: 40px;
     padding-right: 5px;
     display: flex;
@@ -53,18 +63,113 @@ a {
 
 button {
     padding: 15px;
-    background-color: blue;
+    background-color: rgb(29, 161, 242);
     color: white;
-    border-radius: 10px;
-    width: 100px;
+    border-radius: 100px;
+    width: 230px;
     margin-left: 40px;
     font-size: 15px;
+    height: 50px;
+    border: 0;
+}
+.button-2{
+    background-color: rgb(29, 161, 242);
+    color: white;
+    border-radius: 100px;
+    width: 75px;
+    margin-left: 400px;
+    font-size: 15px;
+    height: 40px;
+    border: 0;
+    padding: 5px;
+}
+.search-bar {
+    padding: 10px;
+    padding-right: 300px;
+    border: 0;
+}
+.search-bar:focus {
+    border: 0;
+    /*outline: none;*/ /*used to remove the border outline*/
+    overflow: hidden;
+}
+.search-twitter {
+    padding: 15px;
+    padding-right: 150px;
+    border: 0;
+    /* margin-left: 20px; */
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+.search-twitter:focus {
+    border: 0;
+    outline: none;
 }
 
+.link {
+    display: flex;
+    flex: 1;
+    padding: 7px 15px;
+}
+.link-2 {
+    display: flex;
+    flex: 1;
+    padding: 7px 15px;
+    justify-content: space-between;
+}
+.tweet {
+    display: block;
+}
+.home-log {
+    display: flex;
+    justify-content: space-between;
+    /*margin-top: 10px;
+    margin-left: 10px;*/
+    font-size: 20px;
+    font-weight: 100px;
+    align-content: center;
+    align-items: center;
+    /* padding: 5px;
+    margin: 0; */
+} 
+.Borderline {
+    display: flex;
+    
+}
+.flexer {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-.search-bar {
-    padding: 15px 50px;
+.movement {
+    margin-left: 25%;
+    display: flex;
+}
+.Trends {
+    background-color: whitesmoke;
+    margin-right: 20px;
     border-radius: 20px;
-    margin-top: 5px;
-    margin-left: 5px;
+}
+.trending {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+.flexible {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    border-bottom: 2px solid grey;
+}
+.img-flex {
+    /* margin-top: 10px; */
+}
+.show-more {
+    padding: 10px;
 }
